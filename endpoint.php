@@ -68,7 +68,7 @@ function get_request_method() {
 }
 
 if ($method == "POST") {
-    header("Content-Type: text/plain");
+    header("Content-Type: application/json");
 
     // Assumes you have a chunking.success.endpoint set to point here with a query parameter of "done".
     // For example: /myserver/handlers/endpoint.php?done
